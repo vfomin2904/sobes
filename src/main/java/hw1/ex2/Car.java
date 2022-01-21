@@ -1,7 +1,7 @@
 package hw1.ex2;
 
-public class Car {
-    public Engine engine;
+abstract class Car {
+    private Engine engine;
     private String color;
     private String name;
 
