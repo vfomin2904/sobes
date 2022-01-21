@@ -1,6 +1,6 @@
 package hw1.ex2;
 
-class Lorry extends Car{
+class Lorry extends Car implements Moveable, Stopable{
 
     @Override
     public void move(){
