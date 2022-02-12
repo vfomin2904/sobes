@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student</title>
+</head>
+<body>
+    <table th:if="${student != null}">
+        <tr>
+            <td>id</td>
+            <td>Имя</td>
+            <td>Возраст</td>
+        </tr>
+        <tr>
+            <td th:text="${student.id}"></td>
+            <td th:text="${student.name}"></td>
+            <td th:text="${student.age}"></td>
+        </tr>
+    </table>
+    <h2 th:if="${student == null}">Студент не найден</h2>
+</body>
+</html>
